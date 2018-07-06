@@ -34,9 +34,8 @@ Designed by M4TRIX_H4CK3R
     print(banner)
 
 def helpBanner():
-    print("Usage: python nmap.py [URL] [COOKIES]")
+    print("Usage: python webdirvenom.py [URL]")
     print("\nURL: Url of the site")
-    print("COOKIES: Cookie to be used {OPTIONAL}")
 
 def main(url):
     banner()

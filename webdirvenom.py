@@ -120,9 +120,12 @@ def scan(url):
     	sys.exit(1)
 
 try:
-    if sys.argv[1] == "-h" or sys.argv[1] == "--help":
-        helpBanner()
-    else:
-        main(sys.argv[1])
+	if len(sys.argv) > 1:
+	    if sys.argv[1] == "-h" or sys.argv[1] == "--help":
+		helpBanner()
+	    else:
+		main(sys.argv[1])
+	else:
+		helpBanner()
 except KeyboardInterrupt:
     print("\nUser Interrupted..!  Exiting..!!")
